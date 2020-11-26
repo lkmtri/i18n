@@ -4,7 +4,6 @@
   "description": "i18n utilities",
   "author": "Tri Le",
   "license": "MIT",
-  "private": false,
   "dependencies": {
     "@lokalise/node-api": "5.3.0",
     "fast-glob": "3.2.4",
