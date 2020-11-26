@@ -1,5 +1,5 @@
 {
-  "name": "@suinegmai/i18n",
+  "name": "lokalise-i18n",
   "version": "1.0.0",
   "description": "i18n utilities",
   "author": "Tri Le",
@@ -12,8 +12,8 @@
     "unzipper": "0.10.11"
   },
   "bin": {
-    "i18n-download": "./scripts/download",
-    "i18n-upload": "./scripts/upload",
-    "i18n-extract": "./scripts/extract"
+    "i18n-download": "scripts/download.js",
+    "i18n-upload": "scripts/upload.js",
+    "i18n-extract": "scripts/extract.js"
   }
 }
