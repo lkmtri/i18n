@@ -1,0 +1,20 @@
+{
+  "name": "@suinegmai/i18n",
+  "version": "1.0.0",
+  "description": "i18n utilities",
+  "author": "Tri Le",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@lokalise/node-api": "5.3.0",
+    "fast-glob": "3.2.4",
+    "fs-extra": "9.0.1",
+    "request": "2.88.2",
+    "unzipper": "0.10.11"
+  },
+  "bin": {
+    "i18n-download": "./scripts/download",
+    "i18n-upload": "./scripts/upload",
+    "i18n-extract": "./scripts/extract"
+  }
+}
