@@ -3,7 +3,7 @@
 const config = require('../utils/config')
 const { Lokalise } = require('../utils/lokalise')
 
-const { lokaliseProjectId, lokaliseTokenEnvName = 'LOKALISE_TOKEN', uploadSourcePath } = config.read()
+const { lokaliseProjectId, lokaliseTokenEnvName = 'LOKALISE_TOKEN', uploadSourcePath, extractOutputFile } = config.read()
 
 const lokalise = Lokalise({
   apiKey: process.env[lokaliseTokenEnvName],
@@ -11,5 +11,5 @@ const lokalise = Lokalise({
 })
 
 lokalise.upload({
-  path: uploadSourcePath,
+  path: uploadSourcePath || extractOutputFile,
 })
