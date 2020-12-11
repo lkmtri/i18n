@@ -17,6 +17,7 @@ const extractMessage = async () => {
       await extract(files, {
         idInterpolationPattern: '[sha512:contenthash:base64:6]',
         additionalComponentNames: ['T'],
+        extractFromFormatMessageCall: true,
       })
     )
 
