@@ -26,7 +26,7 @@ const extractMessage = async () => {
       return acc
     }, {})
 
-    await outputFile(extractOutputFile, JSON.stringify(parsed, null, 2), 'utf-8')
+    await outputFile(extractOutputFile, JSON.stringify(parsed, null, 4), 'utf-8')
   } catch (err) {
     console.error(err.message)
   }
